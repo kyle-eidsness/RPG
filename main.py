@@ -1,6 +1,21 @@
-"""Allows the user to enter one of the letters in order to perform an action or quit"""
+# Title : RPG - Simple Menu
+# Coder Name: Kyle Eidsness
+# Class: CS 30 Period 1
+# Date: March 14, 2023
+# -------------------------------------------------------------
+""" This is a simple RPG Menu
+
+    User is given the option to walk, look around, interact,
+    open map, and attack
+
+    This is a skeleton for an improved program and the game
+    continuously loops until
+    the user quits"""
+# -------------------------------------------------------------
+
 def performAction(action):
-    """ Character looks, interacts, open's map, or attack's according to the user's input (action)"""
+    """ Character looks, interacts, open's map, or attack's
+    according to the user's input (action)"""
     if action == "w":
         print("You walk in a direction!")
     elif action == "l":
@@ -14,7 +29,8 @@ def performAction(action):
 
 
 def printOptions():
-    """ Prints to console the actions the user can perform by inputting first letter"""
+    """ Prints to console the actions the user can
+    perform by inputting first letter"""
     print("""Actions:
     *(W)alk
     *(L)ook
@@ -28,7 +44,8 @@ def printOptions():
 # prints out the actions user can perform before running the program
 printOptions()
 while True:
-    """main code that asks user to enter an action to perform and 'outsources' performing the action"""
+    """main code that asks user to enter an action to perform
+    and 'outsources' performing the action"""
     userInput = input("Enter an action (or o for options): ").lower()[:1]
     if userInput == "q":
         # Exits program
